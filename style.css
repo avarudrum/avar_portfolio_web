@@ -51,7 +51,7 @@ select {
   --color-muted: #666666;
 
   /* Type */
-  --font-body: "Libre Baskerville" Georgia, serif;
+  --font-body: "Libre Baskerville", Georgia, serif;
   --font-heading: var(--font-body);
 
   --size-sm: 0.875rem;
@@ -87,9 +87,7 @@ body {
   background-color: #efcbb1;
 }
 
-section {
-  padding: 40px 0;
-}
+
 
 h1, h2, h3 {
   font-family: var(--font-heading);
@@ -100,9 +98,13 @@ h1 {
   color: rgb(23, 20, 83);
 }
 
+/* ============================================================
+   DEBUG
+   ============================================================ 
 * {
   outline: 1px solid red;
 }
+  */
 
 h1 {
   font-size: 40px;
@@ -144,10 +146,10 @@ section {
 
 .site-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding: 16px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .logo {}
@@ -159,12 +161,6 @@ section {
   padding: 0;
 }
 
-.site-nav ul {
-  display: flex;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-}
 
 .site-nav a {}
 
@@ -190,7 +186,10 @@ section {
    ABOUT
    ============================================================ */
 
-#about {}
+#about {
+  padding-top: 200px;
+  padding-bottom: 16px;
+}
 
 
 /* ============================================================
